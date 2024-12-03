@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public int speed = 3;
+    public string badcolor = "Vert";
     void Update()
     {
         Vector3 scrolling = Vector3.zero;
@@ -14,12 +15,12 @@ public class CharacterMovement : MonoBehaviour
         transform.Translate(movement);
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("touché");
-        if (other.tag == "toilet")
+        if (other.tag == badcolor)
         {
-            Debug.Log("toilet touch");
+            Debug.Log("stop");
             speed = 0;
         }
     }
