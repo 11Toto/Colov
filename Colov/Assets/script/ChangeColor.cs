@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
-    public float timeBetweenChange = 0.01f;
+    public float timeBetweenChange = 0.3f;
     private float timestamp; 
+    public Material[] materials;
+    public MeshRenderer meshRenderer;
 
     void Start()
     {
@@ -17,38 +19,68 @@ public class ChangeColor : MonoBehaviour
     
     void Update()
     {
+       ChangeTagColor();
+       ChangeSpriteColor();
+    }
+
+    void ChangeTagColor()
+    {
         if (transform.gameObject.tag == "Red")
-            if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-            {
-                transform.gameObject.tag = "Blue";
-                timestamp = Time.time + timeBetweenChange;
-            }
+                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
+                    {
+                        transform.gameObject.tag = "Blue";
+                        timestamp = Time.time + timeBetweenChange;
+                    }
 
-        if (transform.gameObject.tag == "Blue")
-            if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
-            {
-                transform.gameObject.tag = "Green";
-                timestamp = Time.time + timeBetweenChange;
-            }
-        if (transform.gameObject.tag == "Green")
-            if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
-            {
-                transform.gameObject.tag = "Yellow";
-                timestamp = Time.time + timeBetweenChange;
-            }
-        if (transform.gameObject.tag == "Yellow")
-            if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
-            {
-                transform.gameObject.tag = "Purple";
-                timestamp = Time.time + timeBetweenChange;
-            }
-        if (transform.gameObject.tag == "Purple")
-            if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
-            {
-                transform.gameObject.tag = "Red";
-                timestamp = Time.time + timeBetweenChange;
-            }    
+                if (transform.gameObject.tag == "Blue")
+                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
+                    {
+                        transform.gameObject.tag = "Green";
+                        timestamp = Time.time + timeBetweenChange;
+                    }
+                if (transform.gameObject.tag == "Green")
+                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
+                    {
+                        transform.gameObject.tag = "Yellow";
+                        timestamp = Time.time + timeBetweenChange;
+                    }
+                if (transform.gameObject.tag == "Yellow")
+                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
+                    {
+                        transform.gameObject.tag = "Purple";
+                        timestamp = Time.time + timeBetweenChange;
+                    }
+                if (transform.gameObject.tag == "Purple")
+                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space))
+                    {
+                        transform.gameObject.tag = "Red";
+                        timestamp = Time.time + timeBetweenChange;
+                    }    
 
+    }
+
+    void ChangeSpriteColor()
+    {
+            if (transform.gameObject.tag == "Red")
+            {
+                meshRenderer.material = materials[0];
+            }
+            if (transform.gameObject.tag == "Blue")
+            {
+                meshRenderer.material = materials[1];
+            }
+            if (transform.gameObject.tag == "Green")
+            {
+                meshRenderer.material = materials[2];
+            }
+            if (transform.gameObject.tag == "Yellow")
+            {
+                meshRenderer.material = materials[3];
+            }
+            if (transform.gameObject.tag == "Purple")
+            {
+                meshRenderer.material = materials[4];
+            }
     }
 
     
