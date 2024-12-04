@@ -9,6 +9,11 @@ TagManager:
   - Green
   - Yellow
   - Purple
+  - RedObstacle
+  - BlueObstacle
+  - GreenObstacle
+  - YellowObstacle
+  - PurpleObstacle
   layers:
   - Default
   - TransparentFX
