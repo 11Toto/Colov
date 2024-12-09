@@ -32,5 +32,6 @@ public class LoadScene : MonoBehaviour
         Debug.Log("Au revoir");
     }
 
+   
     
 }
