@@ -4,8 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Rouge
-  - Vert
+  - Red
+  - Blue
+  - Green
+  - Yellow
+  - Purple
+  - RedObstacle
+  - BlueObstacle
+  - GreenObstacle
+  - YellowObstacle
+  - PurpleObstacle
+  - Niveau1
+  - Niveau2
+  - Niveau3
   layers:
   - Default
   - TransparentFX
