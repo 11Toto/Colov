@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quit
+  m_text: 'Quitter
 
 '
   m_isRightToLeft: 0
@@ -564,10 +564,10 @@ RectTransform:
   - {fileID: 1712080576}
   m_Father: {fileID: 596507911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.12367982, y: 0.015749175}
-  m_AnchorMax: {x: 0.3256404, y: 0.3536271}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.12367982, y: 0}
+  m_AnchorMax: {x: 0.328, y: 0.3536271}
+  m_AnchoredPosition: {x: -0.5, y: 2}
+  m_SizeDelta: {x: -1, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095645449
 MonoBehaviour:
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 1234446517}
   - component: {fileID: 1234446516}
   m_Layer: 5
-  m_Name: 'Button-Quit '
+  m_Name: Button-Quitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,7 +965,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Restart
+  m_text: 'Rejouer
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1424,7 +1426,7 @@ GameObject:
   - component: {fileID: 2088569137}
   - component: {fileID: 2088569136}
   m_Layer: 5
-  m_Name: Button-Restart
+  m_Name: Button-Rejouer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
