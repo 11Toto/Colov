@@ -6,24 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class DeathScript : MonoBehaviour
 {
-    public bool DeathScene = false;
-    public GameObject Player;
+    bool dead = false;
 
-    public void Update()
+    public void Mort()
     {
-        DeathScene = Player.GetComponent<CharacterMovement>().Death;
-        if (DeathScene == true)
-        {
-            LoadDeath();
-        }
-
+        if (dead) return;
+        dead = true;
+        SceneManager.LoadScene("Defaite_Scene");
     }
 
-    public void LoadDeath()
-    {
-        if (DeathScene == true)
-        {
-            SceneManager.LoadScene("Defaite_Scene");
-        }
-    }
+    
 }
