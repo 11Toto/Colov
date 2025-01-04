@@ -57,7 +57,8 @@ public class ChangeColor : MonoBehaviour
                 {
                     case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
                     case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
-                    case CharacterColor.Green: SwitchColor(CharacterColor.Red); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Red); break;
 
                 }
                 break;
@@ -66,7 +67,9 @@ public class ChangeColor : MonoBehaviour
                 {
                     case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
                     case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
-                    case CharacterColor.Green: SwitchColor(CharacterColor.Red); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Purple); break;
+                    case CharacterColor.Purple: SwitchColor(CharacterColor.Red); break;
                 }
                 break;
             }
