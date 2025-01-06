@@ -1,26 +1,30 @@
+
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class ChangeColor : MonoBehaviour
 {
-    public float timeBetweenChange = 0.3f;
-    private float timestamp; 
     public Material[] materials;
     public MeshRenderer meshRenderer;
+    int currentLevel = 0;
+    public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
+    public CharacterColor currentColor = CharacterColor.Red;
 
     void Start()
     {
-    
-        transform.gameObject.tag = "Red";
+        SwitchColor(CharacterColor.Red);
     }
 
     
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-       
-       ChangeSpriteColor();
+        switch(other.gameObject.tag)
+            {
+                case "Niveau1":currentLevel=1; break;
+                case "Niveau2":currentLevel=2; break;
+                case "Niveau3":currentLevel=3; break;
+            }
     }
 
     void ChangeTagColor()
@@ -28,119 +32,61 @@ public class ChangeColor : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider other)
+    void SwitchColor(CharacterColor desiredColor)
     {
-        if (other.gameObject.tag == "Niveau1")
-        {
-            Debug.Log("Niveau1");
-            if (transform.gameObject.tag == "Red")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Blue";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Blue")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Green";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Green")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Red";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
+        currentColor = desiredColor;
+    }
 
-        }
 
-        else if (other.gameObject.tag == "Niveau2")
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Niveau2");
-            if (transform.gameObject.tag == "Red")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Blue";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Blue")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Green";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Green")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Yellow";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Yellow")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Red";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-        }
+            switch(currentLevel)
+            {
+                case 1:
+                switch (currentColor)
+                {
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Red); break;
+                }
+                break;
+                case 2:
+                switch (currentColor)
+                {
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Red); break;
 
-        else if (other.gameObject.tag == "Niveau3")
-        {
-            Debug.Log("Niveau3");
-            if (transform.gameObject.tag == "Red")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Blue";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Blue")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Green";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Green")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Yellow";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Yellow")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Purple";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
-            if (transform.gameObject.tag == "Purple")
-                    if (Time.time >= timestamp && Input.GetKey(KeyCode.Space)) 
-                    {
-                        transform.gameObject.tag = "Red";
-                        timestamp = Time.time + timeBetweenChange;
-                    }
+                }
+                break;
+                case 3:
+                switch (currentColor)
+                {
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Purple); break;
+                    case CharacterColor.Purple: SwitchColor(CharacterColor.Red); break;
+                }
+                break;
+            }
+            ChangeSpriteColor();
         }
     }
 
     void ChangeSpriteColor()
     {
-            if (transform.gameObject.tag == "Red")
-            {
-                meshRenderer.material = materials[0];
-            }
-            if (transform.gameObject.tag == "Blue")
-            {
-                meshRenderer.material = materials[1];
-            }
-            if (transform.gameObject.tag == "Green")
-            {
-                meshRenderer.material = materials[2];
-            }
-            if (transform.gameObject.tag == "Yellow")
-            {
-                meshRenderer.material = materials[3];
-            }
-            if (transform.gameObject.tag == "Purple")
-            {
-                meshRenderer.material = materials[4];
-            }
+        switch(currentColor)
+        {
+            case CharacterColor.Red:  meshRenderer.material = materials[0]; break;
+            case CharacterColor.Blue:  meshRenderer.material = materials[1]; break;
+            case CharacterColor.Green:  meshRenderer.material = materials[2]; break;
+            case CharacterColor.Yellow:  meshRenderer.material = materials[3]; break;
+            case CharacterColor.Purple:  meshRenderer.material = materials[4]; break; 
+        }
     }
 
     

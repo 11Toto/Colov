@@ -5,16 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    void Update()
-    {
-        
-    }
+
 
     public void LoadGame()
     {
@@ -32,6 +24,5 @@ public class LoadScene : MonoBehaviour
         Debug.Log("Au revoir");
     }
 
-   
     
 }

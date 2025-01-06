@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public bool Death;
     public int speed = 3;
+    ChangeColor colorScript => GetComponent<ChangeColor>();
+    public DeathScript deathScript;
 
     void Start()
     {
-        Death = true;
+
     }
     void Update()
     {
@@ -23,41 +24,23 @@ public class CharacterMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (transform.gameObject.tag != "Red" && other.CompareTag("RedObstacle"))
-        {
-             Debug.Log("Tu es Mort par Red");
-             speed = 0;
-             Death = false;
-        }
-        if (transform.gameObject.tag != "Blue" && other.CompareTag("BlueObstacle"))
-        {
-             Debug.Log("Tu es Mort par Blue");
-             speed = 0;
-             Death = false;
-        }
-        if (transform.gameObject.tag != "Green" && other.CompareTag("GreenObstacle"))
-        {
-             Debug.Log("Tu es Mort par Green");
-             speed = 0;
-             Death = false;
-        }
-        if (transform.gameObject.tag != "Yellow" && other.CompareTag("YellowObstacle"))
-        {
-             Debug.Log("Tu es Mort par Yellow");
-             speed = 0;
-             Death = false;
-        }
-        if (transform.gameObject.tag != "Purple" && other.CompareTag("PurpleObstacle"))
-        {
-             Debug.Log("Tu es Mort par Purple");
-             speed = 0;
-             Death = false;
-        }
+     Debug.Log(other.name);
+          switch(other.tag)
+          {
+               default: break;
+               case "RedObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Red) {Debug.Log("Tu es Mort par Red"); Mort();} break;
+               case "BlueObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Blue) {Debug.Log("Tu es Mort par Blue"); Mort();} break;
+               case "GreenObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Green) {Debug.Log("Tu es Mort par Green"); Mort();} break;
+               case "YellowObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Yellow) {Debug.Log("Tu es Mort par Yellow"); Mort();} break;
+               case "PurpleObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Purple) {Debug.Log("Tu es Mort par Purple"); Mort();} break;
+          }
+    }
 
-        if (Death == false)
-        {
-            SceneManager.LoadScene("Defaite_Scene");
-        }
+
+    void Mort()
+    {
+          speed = 0;
+          deathScript.Mort();
     }
 
 }
