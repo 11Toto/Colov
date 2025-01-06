@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu_Scene.unity
+    path: Assets/Scenes/fff.unity
     guid: 4c2b48ea6d755c146899abc40a629614
   - enabled: 1
     path: Assets/Scenes/Game_Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Defaite_Scene.unity
+    path: Assets/Scenes/Defaite_Scene_VF.unity
     guid: a01cb5301b406784e8a6d2b8ce3dfc9e
   - enabled: 1
-    path: Assets/Scenes/Victoire_Scene.unity
+    path: Assets/Scenes/Victoire_Scene_VF.unity
     guid: 364feb0b2dd5c8c4d81480b8cbf88fb3
   - enabled: 1
     path: Assets/Scenes/Pause_Scene.unity
