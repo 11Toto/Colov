@@ -10,12 +10,12 @@ public class LoadScene : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("Game_Scene");
+        SceneManager.LoadScene("Game_Scene_LVL1");
     }
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu_Scene");
+        SceneManager.LoadScene("Menu_Scene_VF");
     }
 
     public void QuitGame()
