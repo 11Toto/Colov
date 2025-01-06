@@ -7,7 +7,8 @@ public class ChangeColor : MonoBehaviour
 {
     public Material[] materials;
     public MeshRenderer meshRenderer;
-    int currentLevel = 0;
+    public int currentLevel = 0;
+
     public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
     public CharacterColor currentColor = CharacterColor.Red;
 

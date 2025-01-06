@@ -12,7 +12,7 @@ public class DeathScript : MonoBehaviour
     {
         if (dead) return;
         dead = true;
-        SceneManager.LoadScene("Defaite_Scene");
+        SceneManager.LoadScene("Defaite_Scene_VF");
     }
 
     
