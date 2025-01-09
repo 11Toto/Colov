@@ -5577,7 +5577,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1110514462}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_MethodName: LoadMenuVF
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6460,7 +6460,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1110514462}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadGameVF
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

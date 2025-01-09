@@ -8,14 +8,34 @@ public class LoadScene : MonoBehaviour
 
 
 
-    public void LoadGame()
+    public void LoadGameVF()
     {
         SceneManager.LoadScene("Game_Scene_LVL1");
     }
 
-    public void LoadMenu()
+    public void LoadGameVA()
+    {
+        SceneManager.LoadScene("Game_Scene_LVL1_VA");
+    }
+
+    public void LoadMenuVF()
     {
         SceneManager.LoadScene("Menu_Scene_VF");
+    }
+
+    public void LoadMenuVA()
+    {
+        SceneManager.LoadScene("Menu_Scene_VA");
+    }
+
+    public void LoadOptionVF()
+    {
+        SceneManager.LoadScene("Option_Scene_VF");
+    }
+
+    public void LoadOptionVA()
+    {
+        SceneManager.LoadScene("Option_Scene_VA");
     }
 
     public void QuitGame()
