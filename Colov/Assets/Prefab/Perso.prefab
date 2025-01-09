@@ -234,6 +234,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 56dfdd0a90903b645b445f2cd51600cf, type: 2}
   - {fileID: 2100000, guid: 4138a51dd7fc15943ad2bad3e04dc979, type: 2}
   meshRenderer: {fileID: 7681305427086595452}
+  currentLevel: 0
   currentColor: 0
 --- !u!54 &7359468601799657250
 Rigidbody:

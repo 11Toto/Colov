@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ public class CharacterMovement : MonoBehaviour
     public int speed = 3;
     ChangeColor colorScript => GetComponent<ChangeColor>();
     public DeathScript deathScript;
+    private bool success;
 
     void Start()
     {
@@ -34,6 +36,27 @@ public class CharacterMovement : MonoBehaviour
                case "YellowObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Yellow) {Debug.Log("Tu es Mort par Yellow"); Mort();} break;
                case "PurpleObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Purple) {Debug.Log("Tu es Mort par Purple"); Mort();} break;
           }
+        
+        if (transform.gameObject.tag == "Red" && other.CompareTag ("RedObstacle"))
+        {
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+        }
+        if (transform.gameObject.tag == "Blue" && other.CompareTag ("BlueObstacle"))
+        {
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+        }
+        if (transform.gameObject.tag == "Green" && other.CompareTag ("GreenObstacle"))
+        {
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+        }
+        if (transform.gameObject.tag == "Yellow" && other.CompareTag ("YellowObstacle"))
+        {
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+        }
+        if (transform.gameObject.tag == "Purple" && other.CompareTag ("PurpleObstacle"))
+        {
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+        }
     }
 
 

@@ -82,11 +82,11 @@ public class ChangeColor : MonoBehaviour
     {
         switch(currentColor)
         {
-            case CharacterColor.Red:  meshRenderer.material = materials[0]; break;
-            case CharacterColor.Blue:  meshRenderer.material = materials[1]; break;
-            case CharacterColor.Green:  meshRenderer.material = materials[2]; break;
-            case CharacterColor.Yellow:  meshRenderer.material = materials[3]; break;
-            case CharacterColor.Purple:  meshRenderer.material = materials[4]; break; 
+            case CharacterColor.Red:  meshRenderer.material = materials[0]; transform.gameObject.tag = "Red"; break;
+            case CharacterColor.Blue:  meshRenderer.material = materials[1]; transform.gameObject.tag = "Blue"; break;
+            case CharacterColor.Green:  meshRenderer.material = materials[2]; transform.gameObject.tag = "Green";break;
+            case CharacterColor.Yellow:  meshRenderer.material = materials[3]; transform.gameObject.tag = "Yellow";break;
+            case CharacterColor.Purple:  meshRenderer.material = materials[4]; transform.gameObject.tag = "Purple";break; 
         }
     }
 
