@@ -7,6 +7,8 @@ public class ChangeColor : MonoBehaviour
 {
     public Material[] materials;
     public MeshRenderer meshRenderer;
+   
+
     public int currentLevel = 0;
 
     public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
@@ -15,6 +17,7 @@ public class ChangeColor : MonoBehaviour
     void Start()
     {
         SwitchColor(CharacterColor.Red);
+        
     }
 
     
@@ -76,6 +79,8 @@ public class ChangeColor : MonoBehaviour
             }
             ChangeSpriteColor();
         }
+
+
     }
 
     void ChangeSpriteColor()
@@ -84,11 +89,12 @@ public class ChangeColor : MonoBehaviour
         {
             case CharacterColor.Red:  meshRenderer.material = materials[0]; transform.gameObject.tag = "Red"; break;
             case CharacterColor.Blue:  meshRenderer.material = materials[1]; transform.gameObject.tag = "Blue"; break;
-            case CharacterColor.Green:  meshRenderer.material = materials[2]; transform.gameObject.tag = "Green";break;
-            case CharacterColor.Yellow:  meshRenderer.material = materials[3]; transform.gameObject.tag = "Yellow";break;
-            case CharacterColor.Purple:  meshRenderer.material = materials[4]; transform.gameObject.tag = "Purple";break; 
+            case CharacterColor.Green:  meshRenderer.material = materials[2]; transform.gameObject.tag = "Green"; break;
+            case CharacterColor.Yellow:  meshRenderer.material = materials[3]; transform.gameObject.tag = "Yellow"; break;
+            case CharacterColor.Purple:  meshRenderer.material = materials[4]; transform.gameObject.tag = "Purple"; break; 
         }
     }
+
 
     
 }
