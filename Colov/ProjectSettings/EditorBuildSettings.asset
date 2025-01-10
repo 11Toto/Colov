@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Option_Scene_VA.unity
     guid: 7a57b59a0c82e2e459861cdd558f8fb2
   - enabled: 1
-    path: Assets/Scenes/Menu_Scene_VA.unity
+    path: Assets/Scenes/Menu_Scene_VA(casser).unity
     guid: 5f3ff5265a366a349bdff18824f67d82
   - enabled: 1
     path: Assets/Scenes/Defeat_Scene_VA.unity
