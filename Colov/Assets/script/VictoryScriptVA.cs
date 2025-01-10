@@ -15,24 +15,24 @@ public class VictoryScriptVA : MonoBehaviour
         {
             if (other.transform.gameObject.tag == "Red")
             {
-                SceneManager.LoadScene("Game_Scene_LVL2_VA");
+                SceneManager.LoadScene("Suivant_LVL1_2_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Blue")
             {
-                SceneManager.LoadScene("Game_Scene_LVL2_VA");
+                SceneManager.LoadScene("Suivant_LVL1_2_Scene_VA");
 
             }
             if (other.transform.gameObject.tag == "Green")
             {
-                SceneManager.LoadScene("Game_Scene_LVL2_VA");
+                SceneManager.LoadScene("Suivant_LVL1_2_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Yellow")
             {
-                SceneManager.LoadScene("Game_Scene_LVL2_VA");
+                SceneManager.LoadScene("Suivant_LVL1_2_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Purple")
             {
-                SceneManager.LoadScene("Game_Scene_LVL2_VA");
+                SceneManager.LoadScene("Suivant_LVL1_2_Scene_VA");
             }
         }
 
@@ -40,23 +40,23 @@ public class VictoryScriptVA : MonoBehaviour
         {
             if (other.transform.gameObject.tag == "Red")
             {
-                SceneManager.LoadScene("Game_Scene_LVL3_VA");
+                SceneManager.LoadScene("Suivant_LVL2_3_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Blue")
             {
-                SceneManager.LoadScene("Game_Scene_LVL3_VA");
+                SceneManager.LoadScene("Suivant_LVL2_3_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Green")
             {
-                SceneManager.LoadScene("Game_Scene_LVL3_VA");
+                SceneManager.LoadScene("Suivant_LVL2_3_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Yellow")
             {
-                SceneManager.LoadScene("Game_Scene_LVL3_VA");
+                SceneManager.LoadScene("Suivant_LVL2_3_Scene_VA");
             }
             if (other.transform.gameObject.tag == "Purple")
             {
-                SceneManager.LoadScene("Game_Scene_LVL3_VA");
+                SceneManager.LoadScene("Suivant_LVL2_3_Scene_VA");
             }
         }
 
