@@ -47,5 +47,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game_Scene_LVL3_VA.unity
     guid: adf362bfbc4557f4ea9b157b465ef7ec
+  - enabled: 1
+    path: Assets/Scenes/Suivant_LVL1_2_Scene_VA.unity
+    guid: c5eff10453489854c83b2f82aeaadcce
+  - enabled: 1
+    path: Assets/Scenes/Suivant_LVL1_2_Scene_VF.unity
+    guid: 3410879b8bbb0a345b43c0f88699bdd2
+  - enabled: 1
+    path: Assets/Scenes/Suivant_LVL2_3_Scene_VA.unity
+    guid: 0c2e574ff2e36c544bef514d4921064c
+  - enabled: 1
+    path: Assets/Scenes/Suivant_LVL2_3_Scene_VF.unity
+    guid: 5d441813a8437a54fa2545cf77e5a4d2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

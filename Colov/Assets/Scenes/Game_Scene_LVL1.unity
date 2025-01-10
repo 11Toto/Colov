@@ -894,7 +894,7 @@ Transform:
   m_GameObject: {fileID: 490100589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.14798, y: 1, z: 4.494642}
+  m_LocalPosition: {x: 17.14798, y: 6.41, z: 4.494642}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1080,38 +1080,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: Particle
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: 24b77350496e19c409584f53e593df12, type: 3}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: PartcileColor.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: particleSystems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: 'PartcileColor.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: 24b77350496e19c409584f53e593df12, type: 3}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: 'PartcileColor.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: 0b7b8c416f6974c41a292906db2080c7, type: 3}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: 'PartcileColor.Array.data[2]'
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: 37a2590b2d3a9164a9b11fd627c46c88, type: 3}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: 'PartcileColor.Array.data[3]'
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: 7e515b0a6984e5d409b77a3fe77ebdf7, type: 3}
-    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
-      propertyPath: 'PartcileColor.Array.data[4]'
-      value: 
-      objectReference: {fileID: 2371314244326197367, guid: e00b9c4a5b37d984396a0e4a7e2d4534, type: 3}
     - target: {fileID: 6287008346544860285, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: m_Name
       value: Perso

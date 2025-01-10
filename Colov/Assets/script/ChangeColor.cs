@@ -1,7 +1,7 @@
 
-using System;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+using UnityEngine.SceneManagement;
+
 
 public class ChangeColor : MonoBehaviour
 {
@@ -14,23 +14,19 @@ public class ChangeColor : MonoBehaviour
     public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
     public CharacterColor currentColor = CharacterColor.Red;
 
-    void Start()
+    void Awake()
     {
+        switch(SceneManager.GetActiveScene().name)
+        {
+            case "Game_Scene_LVL1":currentLevel=1; break;
+            case "Game_Scene_LVL2":currentLevel=2; break;
+            case "Game_Scene_LVL3":currentLevel=3; break;
+        }
+
         SwitchColor(CharacterColor.Red);
-        
     }
 
     
-    void OnTriggerEnter(Collider other)
-    {
-        switch(other.gameObject.tag)
-            {
-                case "Niveau1":currentLevel=1; break;
-                case "Niveau2":currentLevel=2; break;
-                case "Niveau3":currentLevel=3; break;
-            }
-    }
-
     void ChangeTagColor()
     {
         

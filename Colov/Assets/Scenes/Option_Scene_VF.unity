@@ -245,9 +245,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 130963517}
-        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadOptionVA
+      - m_Target: {fileID: 1083673294}
+        m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
+        m_MethodName: ButtonChangeEN
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 468267129}
   - component: {fileID: 468267131}
   - component: {fileID: 468267130}
+  - component: {fileID: 468267132}
   m_Layer: 5
   m_Name: Text_VA
   m_TagString: Untagged
@@ -431,6 +432,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468267128}
   m_CullTransparentMesh: 1
+--- !u!114 &468267132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468267128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d9e1cc53d4c854c9e318f49833c523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fr: Anglais
+  en: English
 --- !u!1 &516167199
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +722,7 @@ GameObject:
   - component: {fileID: 587960784}
   - component: {fileID: 587960786}
   - component: {fileID: 587960785}
+  - component: {fileID: 587960787}
   m_Layer: 5
   m_Name: Text_VF
   m_TagString: Untagged
@@ -832,6 +848,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587960783}
   m_CullTransparentMesh: 1
+--- !u!114 &587960787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587960783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d9e1cc53d4c854c9e318f49833c523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fr: "Fran\xE7ais"
+  en: French
 --- !u!1 &1083673289
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +874,7 @@ GameObject:
   - component: {fileID: 1083673292}
   - component: {fileID: 1083673291}
   - component: {fileID: 1083673290}
+  - component: {fileID: 1083673294}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -940,6 +971,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1083673294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083673289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aefbfbd97dad754ea21adf85b28136d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1291924855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499699285}
   - component: {fileID: 1499699287}
+  - component: {fileID: 1499699288}
   - component: {fileID: 1499699286}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -1376,6 +1420,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499699284}
   m_CullTransparentMesh: 1
+--- !u!114 &1499699288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499699284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d9e1cc53d4c854c9e318f49833c523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fr: Retour
+  en: Back
 --- !u!1 &1586886340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,9 +1517,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 130963517}
-        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadOptionVF
+      - m_Target: {fileID: 1083673294}
+        m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
+        m_MethodName: ButtonChangeFR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
