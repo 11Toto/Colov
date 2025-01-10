@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Menu_Scene_VF.unity
-    guid: 2f2e57f8be2c3dc40b9a5748e601bceb
+    guid: f3e67a43b33b8c246962c1188e05450e
   - enabled: 1
     path: Assets/Scenes/Game_Scene_LVL1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -24,7 +24,28 @@ EditorBuildSettings:
     path: Assets/Scenes/Victoire_Scene_VF.unity
     guid: 364feb0b2dd5c8c4d81480b8cbf88fb3
   - enabled: 1
-    path: Assets/Scenes/Pause_Scene.unity
-    guid: 7c8f1cfb79c494747bd7fe93b1ceff4b
+    path: Assets/Scenes/Option_Scene_VF.unity
+    guid: b2d1a28f486f8f84690223a9ec3e1e92
+  - enabled: 1
+    path: Assets/Scenes/Option_Scene_VA.unity
+    guid: 7a57b59a0c82e2e459861cdd558f8fb2
+  - enabled: 1
+    path: Assets/Scenes/Menu_Scene_VA.unity
+    guid: 5f3ff5265a366a349bdff18824f67d82
+  - enabled: 1
+    path: Assets/Scenes/Defeat_Scene_VA.unity
+    guid: 379e0a7fe53bd06418924c8719e358e7
+  - enabled: 1
+    path: Assets/Scenes/Victory_Scene_VA.unity
+    guid: cbf5bbdcbb04b5a4095d3e51e5d42bb9
+  - enabled: 1
+    path: Assets/Scenes/Game_Scene_LVL1_VA.unity
+    guid: 70979e8e6db5e9448b9ee67c66d09d35
+  - enabled: 1
+    path: Assets/Scenes/Game_Scene_LVL2_VA.unity
+    guid: 432603ce2e23d994cb1e2d6cc157119a
+  - enabled: 1
+    path: Assets/Scenes/Game_Scene_LVL3_VA.unity
+    guid: adf362bfbc4557f4ea9b157b465ef7ec
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

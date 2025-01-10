@@ -4,11 +4,12 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovementVA : MonoBehaviour
 {
+ 
     public int speed = 3;
     ChangeColor colorScript => GetComponent<ChangeColor>();
-    public DeathScript deathScript;
+    public DeathScriptVA deathScriptVA;
     private bool success;
 
     void Start()
@@ -35,11 +36,11 @@ public class CharacterMovement : MonoBehaviour
           switch(other.tag)
           {
                default: break;
-               case "RedObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Red) {Debug.Log("Tu es Mort par Red"); Mortn();} break;
-               case "BlueObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Blue) {Debug.Log("Tu es Mort par Blue"); Mortn();} break;
-               case "GreenObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Green) {Debug.Log("Tu es Mort par Green"); Mortn();} break;
-               case "YellowObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Yellow) {Debug.Log("Tu es Mort par Yellow"); Mortn();} break;
-               case "PurpleObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Purple) {Debug.Log("Tu es Mort par Purple"); Mortn();} break;
+               case "RedObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Red) {Debug.Log("Tu es Mort par Red"); Mort();} break;
+               case "BlueObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Blue) {Debug.Log("Tu es Mort par Blue"); Mort();} break;
+               case "GreenObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Green) {Debug.Log("Tu es Mort par Green"); Mort();} break;
+               case "YellowObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Yellow) {Debug.Log("Tu es Mort par Yellow"); Mort();} break;
+               case "PurpleObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Purple) {Debug.Log("Tu es Mort par Purple"); Mort();} break;
           }
         
         if (transform.gameObject.tag == "Red" && other.CompareTag ("RedObstacle"))
@@ -70,10 +71,10 @@ public class CharacterMovement : MonoBehaviour
     }
 
 
-    void Mortn()
+    void Mort()
     {
         speed = 0;
-        deathScript.Mort();
+        deathScriptVA.MortVA();
     }
 
 }
