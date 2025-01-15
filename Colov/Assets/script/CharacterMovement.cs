@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public int speed = 3;
     ChangeColor colorScript => GetComponent<ChangeColor>();
+    ChangeColor speedlevelScript => GetComponent<ChangeColor>();
     public DeathScript deathScript;
     private bool success;
 
@@ -22,6 +23,13 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 movement = scrolling * Time.deltaTime;
         transform.Translate(movement);
+
+       /* switch(speedlevelScript.currentLevel)
+        {
+            case 1: speed = 3; break;
+            case 2: speed = 6; break;
+            case 3: speed = 9; break;
+        }*/
     }
 
     void PlayParticle(Collider other)
