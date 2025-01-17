@@ -23,9 +23,9 @@ public class WheelColorLVL1Script : MonoBehaviour
 
         switch (changeColorScript.currentLevel)
         {
-            case 0: angle = 120f;break;
-            case 1: angle = 90f; break;
-            case 2: angle = 72f; break;
+            case 1: angle = 120f;break;
+            case 2: angle = 90f; break;
+            case 3: angle = 72f; break;
         }
 
         Wheel.transform.GetChild(changeColorScript.currentLevel-1).gameObject.SetActive(true);
