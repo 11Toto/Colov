@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 4440781879914148277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: -3.02, y: -3.02, z: 3.02}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -185,6 +185,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Perso: {fileID: 6287008346544860285}
+  fx:
+  - {fileID: 6655391971192763641, guid: 79903d9e67f199b43916477ad01f677e, type: 3}
+  - {fileID: 6655391971192763641, guid: 2b68873c0eb12644183697408c90f0e6, type: 3}
+  - {fileID: 6655391971192763641, guid: b3015cdeb80332748b7ca9c3b094729b, type: 3}
+  - {fileID: 6655391971192763641, guid: 457939d35bf9ad843b19a26439864a91, type: 3}
+  - {fileID: 6655391971192763641, guid: e5d7e9d7242d22a40b1933aa32e7ac1b, type: 3}
+  animDuration: 0.3
 --- !u!1 &5033262889815544463
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   deathScript: {fileID: 0}
+  invincible: 0
 --- !u!65 &1117570610532450505
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class ChangeColor : MonoBehaviour
 {
     public Material[] materials;
     public MeshRenderer meshRenderer;
+    ChangeColorAnim colorAnimScript =>GetComponentInChildren<ChangeColorAnim>();
    
 
     public int currentLevel = 0;
@@ -34,6 +35,7 @@ public class ChangeColor : MonoBehaviour
 
     void SwitchColor(CharacterColor desiredColor)
     {
+        colorAnimScript.SelectNewColor(currentColor,desiredColor);
         currentColor = desiredColor;
     }
 

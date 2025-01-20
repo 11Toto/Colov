@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +8,7 @@ public class CharacterMovement : MonoBehaviour
     ChangeColor speedlevelScript => GetComponent<ChangeColor>();
     public DeathScript deathScript;
     private bool success;
+    public bool invincible =false;
 
     void Start()
     {
@@ -23,6 +21,21 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 movement = scrolling * Time.deltaTime;
         transform.Translate(movement);
+
+        if( Input.GetKeyDown(KeyCode.I))
+        {
+            invincible = !invincible;
+        }
+        if( Input.GetKeyDown(KeyCode.T))
+        {
+            if( Time.timeScale >1f) Time.timeScale = 1f ; else Time.timeScale = 3f ;
+        }
+        if( Input.GetKey(KeyCode.LeftControl))
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad1)) {SceneManager.LoadScene("Game_Scene_LVL1");}
+            if (Input.GetKeyDown(KeyCode.Keypad2)) {SceneManager.LoadScene("Game_Scene_LVL2");}  
+            if (Input.GetKeyDown(KeyCode.Keypad3)) {SceneManager.LoadScene("Game_Scene_LVL3");}      
+        }
 
        /* switch(speedlevelScript.currentLevel)
         {
@@ -40,6 +53,7 @@ public class CharacterMovement : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
      Debug.Log(other.name);
+     if( invincible == false)
           switch(other.tag)
           {
                default: break;
