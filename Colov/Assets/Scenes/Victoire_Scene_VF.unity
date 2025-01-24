@@ -15299,7 +15299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 697ba28f3de975f45ba07553e926a629, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a580800f256f164e90162c43137014e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15374,7 +15374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e7d0d9a5df10d14b93d3e59cbf86a3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35dd0441e94fe5e479657448e55a8fc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15507,7 +15507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ca36d5e75ae0249499a80c54932e12a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a580800f256f164e90162c43137014e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15732,7 +15732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33823c9620d230b44ad2445a0fc1420d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a580800f256f164e90162c43137014e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16215,6 +16215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1955288472}
   - component: {fileID: 1955288471}
+  - component: {fileID: 1955288473}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -16298,6 +16299,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1955288473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955288470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &2082841169
 GameObject:
   m_ObjectHideFlags: 0
