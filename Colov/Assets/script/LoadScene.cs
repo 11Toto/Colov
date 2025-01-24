@@ -5,12 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    public bool Anim = false;
+    float timeAnim = 1;
 
 
+    IEnumerator TimerAnim()
+    {
+        yield return new WaitForSeconds(timeAnim);
+        SceneManager.LoadScene("Game_Scene_LVL1");
+    }
 
     public void LoadGameVF()
     {
-        SceneManager.LoadScene("Game_Scene_LVL1");
+        Anim = true;
+        StartCoroutine(TimerAnim());
+        
+
+        
+        
     }
 
 
@@ -42,6 +54,7 @@ public class LoadScene : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Au revoir");
+        Anim = true;
     }
 
     
