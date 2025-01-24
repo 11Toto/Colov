@@ -17,6 +17,7 @@ TagManager:
   - Niveau1
   - Niveau2
   - Niveau3
+  - TriggerCamera
   layers:
   - Default
   - TransparentFX
