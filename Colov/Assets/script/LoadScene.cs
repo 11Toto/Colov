@@ -26,11 +26,6 @@ public class LoadScene : MonoBehaviour
     }
 
 
-    public void LoadGameLVL1()
-    {
-        SceneManager.LoadScene("Game_Scene_LVL1");
-    }
-
     public void LoadGameLVL2()
     {
         SceneManager.LoadScene("Game_Scene_LVL2");
