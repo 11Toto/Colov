@@ -14,8 +14,8 @@ public class AnimBlackScreen : MonoBehaviour
 
         if (GameObject.Find("Script - LoadScene").GetComponent<LoadScene>().Anim) 
     {			
-        transform.DOScaleX (39f, 1f);
-        transform.DOScaleZ (25f, 1f);  
+        transform.DOScaleX (60f, 1f);
+        transform.DOScaleZ (45f, 1f);  
 	}
         /*transform.DOScaleX (0f, 3f);
         transform.DOScaleY (0f, 3f);
