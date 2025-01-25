@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -9,10 +11,19 @@ public class CharacterMovement : MonoBehaviour
     public DeathScript deathScript;
     private bool success;
     public bool invincible =false;
+    float timeDeath = 1.2f;
+    
 
     void Start()
     {
         Time.timeScale = 1f;
+    }
+
+        IEnumerator Timerdeath()
+    {
+        yield return new WaitForSeconds(timeDeath);
+        deathScript.Mort();
+
     }
     void Update()
     {
@@ -95,7 +106,10 @@ public class CharacterMovement : MonoBehaviour
     void Mortn()
     {
         speed = 0;
-        deathScript.Mort();
+        StartCoroutine(Timerdeath());
+        transform.DOScaleY(0.2f, 0.3f); 
+        transform.DOMoveY(-1.5f, 1f);
+        
     }
 
 }
