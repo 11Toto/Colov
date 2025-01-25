@@ -10,7 +10,7 @@ public class ChangeColorAnim : MonoBehaviour
     float turn = 360f;
     public float animDuration = 0.3f;
 
-    bool isTweening = false;
+    //bool isTweening = false;
     ChangeColor.CharacterColor currentColor;
 
 
@@ -18,7 +18,7 @@ public class ChangeColorAnim : MonoBehaviour
     {
         currentColor = newColor;
         //if (isTweening) return;
-        isTweening = true;
+       // isTweening = true;
         transform.DOLocalRotate(-Vector3.forward*turn, animDuration,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack).OnComplete(StopAnim);
     }
 
@@ -36,7 +36,7 @@ public class ChangeColorAnim : MonoBehaviour
         }
         transform.localEulerAngles = Vector3.zero;
        // transform.DOKill();
-        isTweening = false;
+       // isTweening = false;
     }
 
 }
