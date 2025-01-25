@@ -1,6 +1,8 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class ChangeColor : MonoBehaviour
@@ -15,6 +17,7 @@ public class ChangeColor : MonoBehaviour
     public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
     public CharacterColor currentColor = CharacterColor.Red;
 
+
     void Awake()
     {
         switch(SceneManager.GetActiveScene().name)
@@ -24,8 +27,10 @@ public class ChangeColor : MonoBehaviour
             case "Game_Scene_LVL3":currentLevel=3; break;
         }
 
+
         SwitchColor(CharacterColor.Red);
     }
+
 
     
     void ChangeTagColor()
@@ -33,7 +38,7 @@ public class ChangeColor : MonoBehaviour
         
     }
 
-    void SwitchColor(CharacterColor desiredColor)
+    public void SwitchColor(CharacterColor desiredColor)
     {
         colorAnimScript.SelectNewColor(currentColor,desiredColor);
         currentColor = desiredColor;
@@ -42,7 +47,8 @@ public class ChangeColor : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        
+        if (Input.GetKeyDown(KeyCode.Space) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             switch(currentLevel)
             {
