@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public bool Anim = false;
-    float timeAnim = 1;
+    float timeAnim = 0.5f;
 
 
     IEnumerator TimerAnim()
