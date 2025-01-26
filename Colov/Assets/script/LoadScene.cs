@@ -12,7 +12,7 @@ public class LoadScene : MonoBehaviour
     IEnumerator TimerAnim()
     {
         yield return new WaitForSeconds(timeAnim);
-        SceneManager.LoadScene("Game_Scene_LVL1");
+        SceneManager.LoadScene("StoryBoard_Scene");
     }
 
     public void LoadGameVF()
