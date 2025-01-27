@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 220888406}
   - component: {fileID: 220888408}
   - component: {fileID: 220888407}
+  - component: {fileID: 220888409}
   m_Layer: 5
   m_Name: O (B)
   m_TagString: Untagged
@@ -257,6 +258,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220888405}
   m_CullTransparentMesh: 1
+--- !u!114 &220888409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220888405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 2}
+  duration: 3
+  easing: 10
 --- !u!1 &255715813
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +729,7 @@ GameObject:
   - component: {fileID: 727755841}
   - component: {fileID: 727755843}
   - component: {fileID: 727755842}
+  - component: {fileID: 727755844}
   m_Layer: 5
   m_Name: V
   m_TagString: Untagged
@@ -838,6 +855,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727755840}
   m_CullTransparentMesh: 1
+--- !u!114 &727755844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727755840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 1}
+  duration: 3
+  easing: 10
 --- !u!1 &1030592011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1330,7 @@ GameObject:
   - component: {fileID: 1711170210}
   - component: {fileID: 1711170212}
   - component: {fileID: 1711170211}
+  - component: {fileID: 1711170213}
   m_Layer: 5
   m_Name: L
   m_TagString: Untagged
@@ -1423,6 +1456,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711170209}
   m_CullTransparentMesh: 1
+--- !u!114 &1711170213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711170209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 1}
+  duration: 1
+  easing: 10
 --- !u!1 &1818205280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1599,7 @@ GameObject:
   - component: {fileID: 1854978215}
   - component: {fileID: 1854978217}
   - component: {fileID: 1854978216}
+  - component: {fileID: 1854978218}
   m_Layer: 5
   m_Name: O (J)
   m_TagString: Untagged
@@ -1678,6 +1727,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854978214}
   m_CullTransparentMesh: 1
+--- !u!114 &1854978218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854978214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 2}
+  duration: 2
+  easing: 10
 --- !u!1 &1877928024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1753,7 @@ GameObject:
   - component: {fileID: 1877928025}
   - component: {fileID: 1877928027}
   - component: {fileID: 1877928026}
+  - component: {fileID: 1877928028}
   m_Layer: 5
   m_Name: C
   m_TagString: Untagged
@@ -1814,6 +1879,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877928024}
   m_CullTransparentMesh: 1
+--- !u!114 &1877928028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877928024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 1}
+  duration: 2
+  easing: 10
 --- !u!1 &1890506237
 GameObject:
   m_ObjectHideFlags: 0
