@@ -107,8 +107,7 @@ public class CharacterMovement : MonoBehaviour
     {
         speed = 0;
         StartCoroutine(Timerdeath());
-        transform.DOScaleY(0.2f, 0.3f); 
-        transform.DOMoveY(-1.5f, 1f);
+        transform.Find("Graphics").DOScaleY(0.2f, 0.3f); 
         
     }
 

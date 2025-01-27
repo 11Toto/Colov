@@ -1119,6 +1119,10 @@ PrefabInstance:
       propertyPath: colorButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4558056474287364317, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6287008346544860285, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: m_Name
       value: Perso
