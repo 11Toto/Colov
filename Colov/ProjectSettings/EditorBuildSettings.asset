@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Defaite_Scene_3_VF.unity
     guid: 7d46d65a628ee3042847ad503bec2b8a
+  - enabled: 1
+    path: Assets/Scenes/StoryBoard_Scene.unity
+    guid: a783683e020dba945b605df1b110beec
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
