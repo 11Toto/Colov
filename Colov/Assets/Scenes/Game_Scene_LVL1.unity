@@ -1119,6 +1119,10 @@ PrefabInstance:
       propertyPath: colorButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 875242397}
     - target: {fileID: 4558056474287364317, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
@@ -1724,6 +1728,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4508300720306756082, guid: 1540b920737c1a3488567e1f3fb2344d, type: 3}
   m_PrefabInstance: {fileID: 862921076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &875242397 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4708995877791523158, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+  m_PrefabInstance: {fileID: 572438435}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &925617990
 GameObject:
