@@ -19,10 +19,11 @@ public class LoadScene : MonoBehaviour
     {
         Anim = true;
         StartCoroutine(TimerAnim());
-        
+    }
 
-        
-        
+    public void LoadGameVFRestart()
+    {
+        SceneManager.LoadScene("Game_Scene_LVL1");
     }
 
 
