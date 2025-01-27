@@ -5,6 +5,7 @@ using UnityEngine;
 public class TutoScript : MonoBehaviour
 {
     public bool timestop;
+    public GameObject doigt;
 
     void Start ()
     {
@@ -17,14 +18,27 @@ public class TutoScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)|| (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
-                 Time.timeScale = 1f;
+                TutoFinish();
             } 
         }
 
     }
     public void OnTriggerEnter(Collider other)
     {
+        ActivateTuto();
+    }
+
+
+    void ActivateTuto()
+    {
+        doigt.SetActive(true);
         Time.timeScale = 0.3f;
         timestop = true;
+    }
+
+    void TutoFinish()
+    {
+        doigt.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
