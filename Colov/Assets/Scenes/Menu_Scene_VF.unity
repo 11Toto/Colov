@@ -692,8 +692,9 @@ GameObject:
   - component: {fileID: 1140515483}
   - component: {fileID: 1140515485}
   - component: {fileID: 1140515484}
+  - component: {fileID: 1140515486}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Chat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,6 +757,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140515482}
   m_CullTransparentMesh: 1
+--- !u!114 &1140515486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140515482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffeb8afeee1eb5746a20a5ff8fab3b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1317663087
 PrefabInstance:
   m_ObjectHideFlags: 0
