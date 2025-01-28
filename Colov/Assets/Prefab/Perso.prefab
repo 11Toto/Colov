@@ -506,7 +506,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 6d8482f2f60b5224e81d4d1702022a9b, type: 2}
   - {fileID: 2100000, guid: 56dfdd0a90903b645b445f2cd51600cf, type: 2}
   - {fileID: 2100000, guid: 4138a51dd7fc15943ad2bad3e04dc979, type: 2}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 4708995877791523158}
   currentLevel: 0
   currentColor: 0
 --- !u!114 &3301087912679642542
