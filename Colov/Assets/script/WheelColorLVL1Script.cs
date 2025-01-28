@@ -6,6 +6,8 @@ public class WheelColorLVL1Script : MonoBehaviour
     public GameObject Wheel;
     ChangeColor changeColorScript =>GetComponent<ChangeColor>();
 
+    public bool SetActive { get; private set; }
+
     // transform.DORotate(new Vector3 (3.7f, -3.7f, -118f), 1f); == Couleur Rouge
     // transform.DORotate(new Vector3 (3.7f, -3.7f, 8.9f), 1f); == Couleur Bleu
     // transform.DORotate(new Vector3 (3.7f, -3.7f, 127f), 1f); == Couleur Vert
@@ -66,5 +68,14 @@ public class WheelColorLVL1Script : MonoBehaviour
     //         return;
     //     }
     // }
+   }
+
+   void OnTriggerEnter(Collider other)
+   {
+     if(other.gameObject.transform.tag == "TriggerCamera")
+     {
+        Wheel.transform.parent = null;
+        Destroy(Wheel.gameObject);
+     }
    }
 }
