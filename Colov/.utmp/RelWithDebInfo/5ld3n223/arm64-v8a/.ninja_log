@@ -1,0 +1,11 @@
+# ninja log v5
+38	406	7595078341423015	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	b01ef18ee70c8bb5
+407	642	7595078343154624	C:/Users/antoi/OneDrive/Documents/OXO/2024 2025/ProjetSemestre1/Colov/Colov/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5ld3n223/obj/arm64-v8a/libswappywrapper.so	fc81f910f1fa3f83
+23	1092	7595078348189316	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b00955767c85a022
+17	1152	7595078348794206	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	df2abb0fc5156ed8
+12	1205	7595078349351669	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	7599a53254a7d01d
+32	1247	7595078349744838	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d633b1ddcfcd8ce
+1	1279	7595078350092947	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	14787166b1455993
+27	1419	7595078351507990	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1ac2381dfc2c1cfe
+6	1493	7595078352242041	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	929e1253f29d2c0d
+1493	1697	7595078353550842	C:/Users/antoi/OneDrive/Documents/OXO/2024 2025/ProjetSemestre1/Colov/Colov/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5ld3n223/obj/arm64-v8a/libgame.so	c4b2224b0efc93a

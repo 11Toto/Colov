@@ -1,10 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class CharacterMovement : MonoBehaviour
 {
     public int speed = 3;
+    ChangeColor colorScript => GetComponent<ChangeColor>();
+    ChangeColor speedlevelScript => GetComponent<ChangeColor>();
+    public DeathScript deathScript;
+    private bool success;
+    public bool invincible =false;
+    float timeDeath = 1.2f;
+    
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
+        IEnumerator Timerdeath()
+    {
+        yield return new WaitForSeconds(timeDeath);
+        deathScript.Mort();
+
+    }
     void Update()
     {
         Vector3 scrolling = Vector3.zero;
@@ -12,35 +32,83 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 movement = scrolling * Time.deltaTime;
         transform.Translate(movement);
+
+        if( Input.GetKeyDown(KeyCode.I))
+        {
+            invincible = !invincible;
+        }
+        if( Input.GetKeyDown(KeyCode.T))
+        {
+            if( Time.timeScale >1f) Time.timeScale = 1f ; else Time.timeScale = 3f ;
+        }
+        if( Input.GetKey(KeyCode.LeftControl))
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad1)) {SceneManager.LoadScene("Game_Scene_LVL1");}
+            if (Input.GetKeyDown(KeyCode.Keypad2)) {SceneManager.LoadScene("Game_Scene_LVL2");}  
+            if (Input.GetKeyDown(KeyCode.Keypad3)) {SceneManager.LoadScene("Game_Scene_LVL3");}      
+        }
+
+       /* switch(speedlevelScript.currentLevel)
+        {
+            case 1: speed = 3; break;
+            case 2: speed = 6; break;
+            case 3: speed = 9; break;
+        }*/
+    }
+
+    void PlayParticle(Collider other)
+    {
+        other.GetComponentInChildren<ParticleSystem>().Play();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (transform.gameObject.tag != "Red" && other.CompareTag("RedObstacle"))
+     Debug.Log(other.name);
+     if( invincible == false)
+          switch(other.tag)
+          {
+               default: break;
+               case "RedObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Red) {Debug.Log("Tu es Mort par Red"); Mortn();} break;
+               case "BlueObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Blue) {Debug.Log("Tu es Mort par Blue"); Mortn();} break;
+               case "GreenObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Green) {Debug.Log("Tu es Mort par Green"); Mortn();} break;
+               case "YellowObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Yellow) {Debug.Log("Tu es Mort par Yellow"); Mortn();} break;
+               case "PurpleObstacle": if (colorScript.currentColor!=ChangeColor.CharacterColor.Purple) {Debug.Log("Tu es Mort par Purple"); Mortn();} break;
+          }
+        
+        if (transform.gameObject.tag == "Red" && other.CompareTag ("RedObstacle"))
         {
-             Debug.Log("Tu es Mort par Red");
-             speed = 0;
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+            PlayParticle(other);
         }
-        if (transform.gameObject.tag != "Blue" && other.CompareTag("BlueObstacle"))
+        if (transform.gameObject.tag == "Blue" && other.CompareTag ("BlueObstacle"))
         {
-             Debug.Log("Tu es Mort par Blue");
-             speed = 0;
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+            PlayParticle(other);
         }
-        if (transform.gameObject.tag != "Green" && other.CompareTag("GreenObstacle"))
+        if (transform.gameObject.tag == "Green" && other.CompareTag ("GreenObstacle"))
         {
-             Debug.Log("Tu es Mort par Green");
-             speed = 0;
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+            PlayParticle(other);
         }
-        if (transform.gameObject.tag != "Yellow" && other.CompareTag("YellowObstacle"))
+        if (transform.gameObject.tag == "Yellow" && other.CompareTag ("YellowObstacle"))
         {
-             Debug.Log("Tu es Mort par Yellow");
-             speed = 0;
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+            PlayParticle(other);
         }
-        if (transform.gameObject.tag != "Purple" && other.CompareTag("PurpleObstacle"))
+        if (transform.gameObject.tag == "Purple" && other.CompareTag ("PurpleObstacle"))
         {
-             Debug.Log("Tu es Mort par Purple");
-             speed = 0;
+            SoundManager.PlaySound(SoundType.GoodObstacle);
+            PlayParticle(other);
         }
+    }
+
+
+    void Mortn()
+    {
+        speed = 0;
+        StartCoroutine(Timerdeath());
+        transform.Find("Graphics").DOScaleY(0.2f, 0.3f); 
+        
     }
 
 }

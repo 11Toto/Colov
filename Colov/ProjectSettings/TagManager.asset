@@ -17,6 +17,7 @@ TagManager:
   - Niveau1
   - Niveau2
   - Niveau3
+  - TriggerCamera
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1850914693
     locked: 0
