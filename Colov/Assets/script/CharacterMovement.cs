@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public GameObject arrowDisappear;
+    public GameObject wheelDisappear;
     public int speed = 3;
     ChangeColor colorScript => GetComponent<ChangeColor>();
     ChangeColor speedlevelScript => GetComponent<ChangeColor>();
@@ -106,6 +108,10 @@ public class CharacterMovement : MonoBehaviour
     void Mortn()
     {
         speed = 0;
+        arrowDisappear.transform.parent = null;
+        Destroy(arrowDisappear.gameObject);
+        wheelDisappear.transform.parent = null;
+        Destroy(wheelDisappear.gameObject);
         StartCoroutine(Timerdeath());
         transform.Find("Graphics").DOScaleY(0.2f, 0.3f); 
         
