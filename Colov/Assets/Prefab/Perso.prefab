@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 7846288850109985235}
   - component: {fileID: 1117570610532450505}
   - component: {fileID: 4890825797399484445}
+  - component: {fileID: 8146115365024212557}
   m_Layer: 0
   m_Name: Perso
   m_TagString: Red
@@ -647,6 +648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b8451af0153e41b4e9a6ff17c31fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowDisappear: {fileID: 4608376785509275459}
+  wheelDisappear: {fileID: 7082700030906606257}
   speed: 3
   deathScript: {fileID: 0}
   invincible: 0
@@ -684,6 +687,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wheel: {fileID: 7082700030906606257}
+--- !u!114 &8146115365024212557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6287008346544860285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72fa29c1d225e1409af37356645c494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Arrow: {fileID: 4608376785509275459}
 --- !u!1 &7082700030906606257
 GameObject:
   m_ObjectHideFlags: 0

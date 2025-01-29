@@ -10,15 +10,12 @@ public class ChangeColorAnim : MonoBehaviour
     float turn = 360f;
     public float animDuration = 0.3f;
 
-    //bool isTweening = false;
     ChangeColor.CharacterColor currentColor;
 
 
     public void SelectNewColor(ChangeColor.CharacterColor oldColor, ChangeColor.CharacterColor newColor)
     {
         currentColor = newColor;
-        //if (isTweening) return;
-       // isTweening = true;
         transform.DOLocalRotate(-Vector3.forward*turn, animDuration,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack).OnComplete(StopAnim);
     }
 
@@ -35,8 +32,6 @@ public class ChangeColorAnim : MonoBehaviour
             case ChangeColor.CharacterColor.Purple: Instantiate(fx[4], transform); break;
         }
         transform.localEulerAngles = Vector3.zero;
-       // transform.DOKill();
-       // isTweening = false;
     }
 
 }
