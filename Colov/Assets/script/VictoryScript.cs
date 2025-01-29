@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 public class VictoryScript : MonoBehaviour
 {
 
+    public AudioSource audioSource;
 
-    
+    public AudioClip clip;
+
 
     void OnTriggerEnter(Collider other)
     {
-         
 
-
-
+        
         if (SceneManager.GetActiveScene().name == "Game_Scene_LVL1")
         {
             if (other.transform.gameObject.tag == "Red")
