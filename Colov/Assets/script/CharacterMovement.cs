@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEngine.Audio;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class CharacterMovement : MonoBehaviour
     private bool success;
     public bool invincible =false;
     float timeDeath = 1.2f;
-    
+
+
+    public AudioSource audioSource;
+    public AudioClip Death;
 
     void Start()
     {
@@ -107,6 +111,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Mortn()
     {
+        audioSource.PlayOneShot(Death);
         speed = 0;
         arrowDisappear.transform.parent = null;
         Destroy(arrowDisappear.gameObject);
