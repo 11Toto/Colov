@@ -109,6 +109,7 @@ public class ChangeColor : MonoBehaviour
             spritesperso[2].SetActive(false);
             spritesperso[3].SetActive(false);
             spritesperso[4].SetActive(false);
+            transform.gameObject.tag = "Red";
         }
         if(currentColor == CharacterColor.Blue)
         {
@@ -117,6 +118,7 @@ public class ChangeColor : MonoBehaviour
             spritesperso[2].SetActive(false);
             spritesperso[3].SetActive(false);
             spritesperso[4].SetActive(false);
+            transform.gameObject.tag = "Blue";
         }
         if(currentColor == CharacterColor.Green)
         {
@@ -125,6 +127,7 @@ public class ChangeColor : MonoBehaviour
             spritesperso[2].SetActive(true);
             spritesperso[3].SetActive(false);
             spritesperso[4].SetActive(false);
+            transform.gameObject.tag = "Green";
         }
         if(currentColor == CharacterColor.Yellow)
         {
@@ -133,6 +136,7 @@ public class ChangeColor : MonoBehaviour
             spritesperso[2].SetActive(false);
             spritesperso[3].SetActive(true);
             spritesperso[4].SetActive(false);
+            transform.gameObject.tag = "Yellow";
         }
         if(currentColor == CharacterColor.Purple)
         {
@@ -141,6 +145,7 @@ public class ChangeColor : MonoBehaviour
             spritesperso[2].SetActive(false);
             spritesperso[3].SetActive(false);
             spritesperso[4].SetActive(true);
+            transform.gameObject.tag = "Purple";
         }
     }
 
