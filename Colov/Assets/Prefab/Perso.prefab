@@ -711,19 +711,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab27dc48100d6d043ae26825d97c1133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 0c7bd3f3e4c7bb4428709840e2e8ae4b, type: 2}
-  - {fileID: 2100000, guid: 1694dce06519cc9448c1f668cf8bfceb, type: 2}
-  - {fileID: 2100000, guid: 6d8482f2f60b5224e81d4d1702022a9b, type: 2}
-  - {fileID: 2100000, guid: 56dfdd0a90903b645b445f2cd51600cf, type: 2}
-  - {fileID: 2100000, guid: 4138a51dd7fc15943ad2bad3e04dc979, type: 2}
   spritesperso:
   - {fileID: 7120233750208779558}
   - {fileID: 1966112106021727637}
   - {fileID: 8343784269596373427}
   - {fileID: 3168367409120602007}
   - {fileID: 7975863335668564045}
-  meshRenderer: {fileID: 0}
   currentLevel: 0
   currentColor: 0
 --- !u!114 &3301087912679642542
@@ -782,6 +775,8 @@ MonoBehaviour:
   speed: 3
   deathScript: {fileID: 0}
   invincible: 0
+  audioSource: {fileID: 0}
+  Death: {fileID: 0}
 --- !u!65 &1117570610532450505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -801,8 +796,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.92, y: 2.8, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.8846545, y: 2.8, z: 0.1}
+  m_Center: {x: 1.7738862, y: 0, z: 0}
 --- !u!114 &4890825797399484445
 MonoBehaviour:
   m_ObjectHideFlags: 0
