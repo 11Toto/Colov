@@ -8,11 +8,9 @@ public class WheelColorLVL1Script : MonoBehaviour
 
     public bool SetActive { get; private set; }
 
-    // transform.DORotate(new Vector3 (3.7f, -3.7f, -118f), 1f); == Couleur Rouge
-    // transform.DORotate(new Vector3 (3.7f, -3.7f, 8.9f), 1f); == Couleur Bleu
-    // transform.DORotate(new Vector3 (3.7f, -3.7f, 127f), 1f); == Couleur Vert
 
     float angle = 120f;
+    public float Lvl;
 
     void Start()
     {
@@ -23,9 +21,9 @@ public class WheelColorLVL1Script : MonoBehaviour
 
         switch (changeColorScript.currentLevel)
         {
-            case 1: angle = 120f;break;
-            case 2: angle = 90f; break;
-            case 3: angle = 72f; break;
+            case 1: angle = 120f;Lvl =1;break;
+            case 2: angle = 90f;Lvl =2; break;
+            case 3: angle = 72f;Lvl =3; break;
         }
 
         Wheel.transform.GetChild(changeColorScript.currentLevel-1).gameObject.SetActive(true);
@@ -39,35 +37,64 @@ public class WheelColorLVL1Script : MonoBehaviour
             Wheel.transform.DOLocalRotate(-Vector3.forward*angle, 0.3f,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack);
         }
 
-    // if( color==0)
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         WheelLVL1.transform.DORotate(new Vector3 (3.7f, -3.7f, 8.9f), 1f);
-    //         color = 1;
-    //         return;
-    //     }
-    // }
+        if (Lvl == 1)
+        {
+            if (transform.tag == "Red")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 0);
+            }
+            if (transform.tag == "Blue")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, -120);
+            }
+            if (transform.tag == "Green")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 120);
+            }
+        }
 
-    // if (color==1)
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         WheelLVL1.transform.DORotate(new Vector3 (3.7f, -3.7f, 127f), 1f);
-    //         color = 2;
-    //         return;
-    //     }
-    // }
-
-    // if (color==2)
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         WheelLVL1.transform.DORotate(new Vector3 (3.7f, -3.7f, -118f), 1f);
-    //         color = 0;
-    //         return;
-    //     }
-    // }
+        if (Lvl == 2)
+        {
+            if (transform.tag == "Red")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 0);
+            }
+            if (transform.tag == "Blue")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, -90);
+            }
+            if (transform.tag == "Green")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 180);
+            }
+            if (transform.tag == "Yellow")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 90);
+            }
+        }
+            if (Lvl == 3)
+        {
+            if (transform.tag == "Red")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 0);
+            }
+            if (transform.tag == "Blue")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, -72);
+            }
+            if (transform.tag == "Green")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, -144);
+            }
+            if (transform.tag == "Yellow")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 144);
+            }
+            if (transform.tag == "Purple")
+            {
+                Wheel.transform.localEulerAngles = new Vector3 (0, 0, 72);
+            }
+        }
    }
 
    void OnTriggerEnter(Collider other)
