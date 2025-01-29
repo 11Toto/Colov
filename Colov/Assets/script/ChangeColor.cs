@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class ChangeColor : MonoBehaviour
 {
-    public Material[] materials;
-    public MeshRenderer meshRenderer;
+    //public Material[] materials;
+    public GameObject[] spritesperso;
+
+    //public MeshRenderer meshRenderer;
     ChangeColorAnim colorAnimScript =>GetComponentInChildren<ChangeColorAnim>();
    
 
@@ -47,7 +49,18 @@ public class ChangeColor : MonoBehaviour
 
     void Update()
     {
-        
+        ChangeSpriteGameObject();
+
+
+
+
+
+
+
+
+
+
+
         if (Input.GetKeyDown(KeyCode.Space) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             switch(currentLevel)
@@ -87,16 +100,62 @@ public class ChangeColor : MonoBehaviour
 
     }
 
+    void ChangeSpriteGameObject()
+    {
+        if(currentColor == CharacterColor.Red)
+        {
+            spritesperso[0].SetActive(true);
+            spritesperso[1].SetActive(false);
+            spritesperso[2].SetActive(false);
+            spritesperso[3].SetActive(false);
+            spritesperso[4].SetActive(false);
+        }
+        if(currentColor == CharacterColor.Blue)
+        {
+            spritesperso[0].SetActive(false);
+            spritesperso[1].SetActive(true);
+            spritesperso[2].SetActive(false);
+            spritesperso[3].SetActive(false);
+            spritesperso[4].SetActive(false);
+        }
+        if(currentColor == CharacterColor.Green)
+        {
+            spritesperso[0].SetActive(false);
+            spritesperso[1].SetActive(false);
+            spritesperso[2].SetActive(true);
+            spritesperso[3].SetActive(false);
+            spritesperso[4].SetActive(false);
+        }
+        if(currentColor == CharacterColor.Yellow)
+        {
+            spritesperso[0].SetActive(false);
+            spritesperso[1].SetActive(false);
+            spritesperso[2].SetActive(false);
+            spritesperso[3].SetActive(true);
+            spritesperso[4].SetActive(false);
+        }
+        if(currentColor == CharacterColor.Purple)
+        {
+            spritesperso[0].SetActive(false);
+            spritesperso[1].SetActive(false);
+            spritesperso[2].SetActive(false);
+            spritesperso[3].SetActive(false);
+            spritesperso[4].SetActive(true);
+        }
+    }
+
     void ChangeSpriteColor()
     {
-        switch(currentColor)
+        /*switch(currentColor)
         {
-            case CharacterColor.Red:  meshRenderer.material = materials[0]; transform.gameObject.tag = "Red"; break;
+            
+            /*case CharacterColor.Red:  meshRenderer.material = materials[0]; transform.gameObject.tag = "Red"; break;
             case CharacterColor.Blue:  meshRenderer.material = materials[1]; transform.gameObject.tag = "Blue"; break;
             case CharacterColor.Green:  meshRenderer.material = materials[2]; transform.gameObject.tag = "Green"; break;
             case CharacterColor.Yellow:  meshRenderer.material = materials[3]; transform.gameObject.tag = "Yellow"; break;
             case CharacterColor.Purple:  meshRenderer.material = materials[4]; transform.gameObject.tag = "Purple"; break; 
-        }
+        }*/
+
     }
 
 
