@@ -15,6 +15,9 @@ public class StoryBoard : MonoBehaviour
     float timeBoard3 = 4.1f;
     float timeBoard4 = 4.1f;
     float timeBoard5 = 3.5f;
+    float timeBoard6 = 4.1f;
+    float timeBoard7 = 6.1f;
+    float timeBoard8 = 3.4f;
 
 
     IEnumerator TimerBoard1()
@@ -24,31 +27,49 @@ public class StoryBoard : MonoBehaviour
     }
      IEnumerator TimerBoard2()
     {
-        storyboard[2].transform.DOScale(1.1f, 3f).OnComplete(() => {storyboard[2].transform.DOScale(0f, 1f);});
+        storyboard[2].transform.DOScale(1f, 3f);
         yield return new WaitForSeconds(timeBoard2);
         StartCoroutine(TimerBoard3());
     }
      IEnumerator TimerBoard3()
     {
-        storyboard[3].transform.DOScale(1.1f, 3f).OnComplete(() => {storyboard[3].transform.DOScale(0f, 1f);});
+        storyboard[3].transform.DOScale(1f, 3f);
         yield return new WaitForSeconds(timeBoard3);
         StartCoroutine(TimerBoard4());
     }
      IEnumerator TimerBoard4()
     {
-        storyboard[4].transform.DOScale(1.1f, 3f).OnComplete(() => {storyboard[4].transform.DOScale(0f, 1f);});
+        storyboard[4].transform.DOScale(1f, 3f);
         yield return new WaitForSeconds(timeBoard4);
         StartCoroutine(TimerBoard5());
     }
      IEnumerator TimerBoard5()
     {
-        storyboard[5].transform.DOScale(1.1f, 3f).OnComplete(() => {storyboard[5].transform.DOScale(0f, 1f);});
+        storyboard[5].transform.DOScale(1f, 3f);
         yield return new WaitForSeconds(timeBoard5);
+        StartCoroutine(TimerBoard6());
+    }
+     IEnumerator TimerBoard6()
+    {
+        storyboard[6].transform.DOScale(1f, 3f);
+        yield return new WaitForSeconds(timeBoard6);
+        StartCoroutine(TimerBoard7());
+    }
+     IEnumerator TimerBoard7()
+    {
+        storyboard[7].transform.DOScale(1f, 3f);
+        yield return new WaitForSeconds(timeBoard7);
+        StartCoroutine(TimerBoard8());
+    }
+     IEnumerator TimerBoard8()
+    {
+        storyboard[8].transform.DOScale(2f, 3f);
+        yield return new WaitForSeconds(timeBoard8);
         SceneManager.LoadScene("Game_Scene_LVL1");
     }
     public void Awake()
     {
-        storyboard[1].transform.DOScale(1.1f, 3f).OnComplete(() => {storyboard[1].transform.DOScale(0f, 1f);});
+        storyboard[1].transform.DOScale(1f, 3f);
         StartCoroutine(TimerBoard1());
     }
 
