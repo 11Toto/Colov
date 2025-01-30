@@ -488,7 +488,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6114645975841830732, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 323598962982901982, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2017608887}
     m_AddedComponents: []
@@ -740,11 +740,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6114645975841830732, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 323598962982901982, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1807988704}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
+--- !u!224 &637324470 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 323598962982901982, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
+  m_PrefabInstance: {fileID: 601974786}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &761364349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1055,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6114645975841830732, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
   m_PrefabInstance: {fileID: 601974786}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1079535475 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 323598962982901982, guid: 51101c8be55a9664bbca39e88972358d, type: 3}
+  m_PrefabInstance: {fileID: 457868741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201767482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,10 +1274,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 40.25
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1328,7 +1338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d9e1cc53d4c854c9e318f49833c523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fr: Fin de Niveau
+  fr: Prochaine destination
   en: Next destination
 --- !u!224 &1634655555 stripped
 RectTransform:
@@ -1363,15 +1373,15 @@ RectTransform:
   m_GameObject: {fileID: 1807988703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.807298, y: 0.807298, z: 0.807298}
+  m_LocalScale: {x: 0.8072981, y: 0.8072981, z: 0.8072981}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1056190529}
+  m_Father: {fileID: 637324470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30533707, y: 0.19700001}
   m_AnchorMax: {x: 0.68200004, y: 0.3891353}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3.470842}
+  m_SizeDelta: {x: 0, y: 3.2226562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1807988705
 MonoBehaviour:
@@ -1434,10 +1444,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 18.3
   m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1559,15 +1569,15 @@ RectTransform:
   m_GameObject: {fileID: 2017608886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.807298, y: 0.807298, z: 0.807298}
+  m_LocalScale: {x: 0.8072981, y: 0.8072981, z: 0.8072981}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1634655555}
+  m_Father: {fileID: 1079535475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32258832, y: 0.179}
   m_AnchorMax: {x: 0.66800004, y: 0.37100002}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3.7738953}
+  m_SizeDelta: {x: 0, y: 3.2203865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017608888
 MonoBehaviour:
@@ -1630,10 +1640,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
+  m_fontSize: 18
   m_fontSizeBase: 10
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
