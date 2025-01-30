@@ -2129,9 +2129,17 @@ PrefabInstance:
       propertyPath: audioSwitch
       value: 
       objectReference: {fileID: 2106086330}
+    - target: {fileID: 4558056474287364317, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.39
+      objectReference: {fileID: 0}
     - target: {fileID: 6287008346544860285, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: m_Name
       value: Perso
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426185024572988700, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 7846288850109985235, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: audioSource
