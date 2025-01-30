@@ -19,6 +19,18 @@ public class ChangeColor : MonoBehaviour
     public enum CharacterColor{Red, Blue,Green,Yellow,Purple}
     public CharacterColor currentColor = CharacterColor.Red;
 
+    public List<AudioClip> audioClipsSwitch;
+    public AudioSource audioSwitch;
+
+
+    public void AudioSwitch()
+    {
+        int r = Random.Range(0, audioClipsSwitch.Count);
+        AudioClip clip = audioClipsSwitch[r];
+        audioSwitch.clip = clip;
+        audioSwitch.Play();
+    }
+
 
     void Awake()
     {
@@ -28,6 +40,8 @@ public class ChangeColor : MonoBehaviour
             case "Game_Scene_LVL2":currentLevel=2; break;
             case "Game_Scene_LVL3":currentLevel=3; break;
         }
+
+        
 
 
         SwitchColor(CharacterColor.Red);
@@ -68,29 +82,29 @@ public class ChangeColor : MonoBehaviour
                 case 1:
                 switch (currentColor)
                 {
-                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
-                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
-                    case CharacterColor.Green: SwitchColor(CharacterColor.Red); break;
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); AudioSwitch(); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); AudioSwitch(); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Red); AudioSwitch(); break;
                 }
                 break;
                 case 2:
                 switch (currentColor)
                 {
-                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
-                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
-                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
-                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Red); break;
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); AudioSwitch(); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); AudioSwitch(); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); AudioSwitch(); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Red); AudioSwitch(); break;
 
                 }
                 break;
                 case 3:
                 switch (currentColor)
                 {
-                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); break;
-                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); break;
-                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); break;
-                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Purple); break;
-                    case CharacterColor.Purple: SwitchColor(CharacterColor.Red); break;
+                    case CharacterColor.Red: SwitchColor(CharacterColor.Blue); AudioSwitch(); break;
+                    case CharacterColor.Blue: SwitchColor(CharacterColor.Green); AudioSwitch(); break;
+                    case CharacterColor.Green: SwitchColor(CharacterColor.Yellow); AudioSwitch(); break;
+                    case CharacterColor.Yellow: SwitchColor(CharacterColor.Purple); AudioSwitch(); break;
+                    case CharacterColor.Purple: SwitchColor(CharacterColor.Red); AudioSwitch(); break;
                 }
                 break;
             }

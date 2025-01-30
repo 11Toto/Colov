@@ -719,6 +719,11 @@ MonoBehaviour:
   - {fileID: 7975863335668564045}
   currentLevel: 0
   currentColor: 0
+  audioClipsSwitch:
+  - {fileID: 8300000, guid: e506aba00bdbab74e8f40d8dde7df7d4, type: 3}
+  - {fileID: 8300000, guid: 9f3cd8ef6591a5246bd2b9f3c8347b5a, type: 3}
+  - {fileID: 8300000, guid: 76a78b1e709c4274db0abd66e962bb0e, type: 3}
+  audioSwitch: {fileID: 0}
 --- !u!114 &3301087912679642542
 MonoBehaviour:
   m_ObjectHideFlags: 0
