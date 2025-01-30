@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 1338413158443695086}
   - component: {fileID: 7622410834059611064}
   - component: {fileID: 3881158969123604762}
+  - component: {fileID: 2715387001857932811}
   m_Layer: 0
   m_Name: YellowObstacle
   m_TagString: YellowObstacle
@@ -453,6 +454,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2715387001857932811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939633053291458382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5143d32247891b14fa6254c830f33a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemObstacle: {fileID: 4734206878708540500}
 --- !u!1 &8701893161670283210
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +678,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+--- !u!198 &4734206878708540500 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8365982467717338584, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+  m_PrefabInstance: {fileID: 3867106261809115532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8836044918727196744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5707547962510635460, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}

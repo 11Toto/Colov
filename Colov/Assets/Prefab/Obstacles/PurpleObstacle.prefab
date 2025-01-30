@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 8632517176645743117}
   - component: {fileID: 7224981624898162177}
   - component: {fileID: 1008640255680482911}
+  - component: {fileID: 2537507074072092839}
   m_Layer: 0
   m_Name: PurpleObstacle
   m_TagString: PurpleObstacle
@@ -195,6 +196,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2537507074072092839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104488149929187767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5143d32247891b14fa6254c830f33a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemObstacle: {fileID: 4076516079823508907}
 --- !u!1 &2453040565074352867
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,5 +507,10 @@ PrefabInstance:
 --- !u!4 &269663875460182455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5707547962510635460, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+  m_PrefabInstance: {fileID: 5515574171532017779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4076516079823508907 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8365982467717338584, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
   m_PrefabInstance: {fileID: 5515574171532017779}
   m_PrefabAsset: {fileID: 0}

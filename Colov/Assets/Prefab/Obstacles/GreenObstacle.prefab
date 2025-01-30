@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3634848364080616142}
   - component: {fileID: 8715539909529325306}
   - component: {fileID: 6046517058502085291}
+  - component: {fileID: 905369582392641788}
   m_Layer: 0
   m_Name: GreenObstacle
   m_TagString: GreenObstacle
@@ -109,6 +110,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &905369582392641788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047200312551127710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5143d32247891b14fa6254c830f33a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemObstacle: {fileID: 1710372620194509855}
 --- !u!1 &1375735273520186236
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +947,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+--- !u!198 &1710372620194509855 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8365982467717338584, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+  m_PrefabInstance: {fileID: 7180292982771245511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3211293914291769347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5707547962510635460, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}

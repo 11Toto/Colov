@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 7598297192207701079}
   - component: {fileID: 3755874638392680187}
   - component: {fileID: 8636917136220507424}
+  - component: {fileID: 8443333468637115476}
   m_Layer: 0
   m_Name: BlueObstacle
   m_TagString: BlueObstacle
@@ -492,6 +493,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8443333468637115476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6002236260267730365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5143d32247891b14fa6254c830f33a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemObstacle: {fileID: 2606728359756190856}
 --- !u!1 &6189274097195677229
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,5 +942,10 @@ PrefabInstance:
 --- !u!4 &2233870880188346516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5707547962510635460, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+  m_PrefabInstance: {fileID: 5779531310662173008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2606728359756190856 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8365982467717338584, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
   m_PrefabInstance: {fileID: 5779531310662173008}
   m_PrefabAsset: {fileID: 0}

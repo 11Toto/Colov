@@ -64,7 +64,7 @@ public class CharacterMovement : MonoBehaviour
 
     void PlayParticle(Collider other)
     {
-        other.GetComponentInChildren<ParticleSystem>().Play();
+        //other.GetComponentInChildren<ParticleSystem>().Play();
     }
 
     void OnTriggerEnter(Collider other)

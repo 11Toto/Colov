@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 1529833293659784989}
   - component: {fileID: 2868846585945997146}
   - component: {fileID: 7776386078072366880}
+  - component: {fileID: 1291626439819638686}
   m_Layer: 0
   m_Name: RedObstacle
   m_TagString: RedObstacle
@@ -836,6 +837,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1291626439819638686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8800497921171795650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5143d32247891b14fa6254c830f33a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemObstacle: {fileID: 7805894691052530232}
 --- !u!1001 &1751314661879005152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -904,5 +918,10 @@ PrefabInstance:
 --- !u!4 &6302967750323621412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5707547962510635460, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
+  m_PrefabInstance: {fileID: 1751314661879005152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7805894691052530232 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8365982467717338584, guid: 2bb0030f69b53ba4aa2d6a698964c38a, type: 3}
   m_PrefabInstance: {fileID: 1751314661879005152}
   m_PrefabAsset: {fileID: 0}
