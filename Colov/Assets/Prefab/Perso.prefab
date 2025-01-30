@@ -781,7 +781,7 @@ MonoBehaviour:
   deathScript: {fileID: 0}
   invincible: 0
   audioSource: {fileID: 0}
-  Death: {fileID: 0}
+  Death: {fileID: 8300000, guid: 0a86a5506c57f4b438e214e350a58607, type: 3}
 --- !u!65 &1117570610532450505
 BoxCollider:
   m_ObjectHideFlags: 0
