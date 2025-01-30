@@ -9,8 +9,6 @@ public class CharacterSoundManager : MonoBehaviour
 
     public AudioClip[] clipIn;
     public AudioClip[] clipOut;
-    public AudioClip Death;
-
     public GameObject player;
     void OnTriggerEnter(Collider other)
     {

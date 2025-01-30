@@ -3244,6 +3244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -30
       objectReference: {fileID: 0}
+    - target: {fileID: 937996123549370750, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 666385278}
     - target: {fileID: 1791653506515679792, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3283,7 +3287,7 @@ PrefabInstance:
     - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: audioSwitch
       value: 
-      objectReference: {fileID: 666385278}
+      objectReference: {fileID: 1109773940}
     - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: colorButton
       value: 
@@ -3661,7 +3665,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6273,7 +6277,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109773939}
-  - component: {fileID: 1109773941}
   - component: {fileID: 1109773940}
   m_Layer: 0
   m_Name: Sound
@@ -6394,23 +6397,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1109773941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109773938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1557bbd7ab91cb4cb81a4a138274e33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundList:
-  - {fileID: 8300000, guid: 0830c810ac25a69419de8e4a397c8dd4, type: 3}
-  - {fileID: 8300000, guid: 31312daed037b64448fd2bf70afbe107, type: 3}
-  - {fileID: 8300000, guid: a7ae7cb58fc5a354cab9564b7c05a08b, type: 3}
-  - {fileID: 8300000, guid: c7b65e3e01ad61441bbce41c933a4c57, type: 3}
 --- !u!4 &1110806860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6a7a353ab1f63bb44a78d878e36358d7, type: 3}

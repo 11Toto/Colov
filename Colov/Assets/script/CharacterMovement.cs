@@ -83,27 +83,22 @@ public class CharacterMovement : MonoBehaviour
         
         if (transform.gameObject.tag == "Red" && other.CompareTag ("RedObstacle"))
         {
-            SoundManager.PlaySound(SoundType.GoodObstacle);
             PlayParticle(other);
         }
         if (transform.gameObject.tag == "Blue" && other.CompareTag ("BlueObstacle"))
         {
-            SoundManager.PlaySound(SoundType.GoodObstacle);
             PlayParticle(other);
         }
         if (transform.gameObject.tag == "Green" && other.CompareTag ("GreenObstacle"))
         {
-            SoundManager.PlaySound(SoundType.GoodObstacle);
             PlayParticle(other);
         }
         if (transform.gameObject.tag == "Yellow" && other.CompareTag ("YellowObstacle"))
         {
-            SoundManager.PlaySound(SoundType.GoodObstacle);
             PlayParticle(other);
         }
         if (transform.gameObject.tag == "Purple" && other.CompareTag ("PurpleObstacle"))
         {
-            SoundManager.PlaySound(SoundType.GoodObstacle);
             PlayParticle(other);
         }
     }

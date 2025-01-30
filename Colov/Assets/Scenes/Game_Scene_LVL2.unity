@@ -2121,6 +2121,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 937996123549370750, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2106086330}
     - target: {fileID: 4348849498166665003, guid: d450101b282e85c43a3f6c69a6f8aedb, type: 3}
       propertyPath: audioSwitch
       value: 
@@ -6652,7 +6656,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946884665}
-  - component: {fileID: 1946884667}
   - component: {fileID: 1946884666}
   m_Layer: 0
   m_Name: Sound
@@ -6773,23 +6776,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1946884667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946884664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1557bbd7ab91cb4cb81a4a138274e33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundList:
-  - {fileID: 8300000, guid: 0830c810ac25a69419de8e4a397c8dd4, type: 3}
-  - {fileID: 8300000, guid: 31312daed037b64448fd2bf70afbe107, type: 3}
-  - {fileID: 8300000, guid: a7ae7cb58fc5a354cab9564b7c05a08b, type: 3}
-  - {fileID: 8300000, guid: c7b65e3e01ad61441bbce41c933a4c57, type: 3}
 --- !u!1 &1975887623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7388,7 +7374,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
