@@ -12,7 +12,8 @@ public class ArrowDisappear : MonoBehaviour
      if(other.gameObject.transform.tag == "TriggerCamera")
      {
         Arrow.transform.parent = null;
-        Destroy(Arrow.gameObject);
+        Arrow.gameObject.SetActive(false);
+        Arrow = null;
      }
    }
 }

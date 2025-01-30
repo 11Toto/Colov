@@ -35,9 +35,9 @@ public class WheelColorLVL1Script : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             Wheel.transform.DOLocalRotate(-Vector3.forward*angle, 0.3f,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack);
-        }
 
-        if (Lvl == 1)
+
+            if (Lvl == 1)
         {
             if (transform.tag == "Red")
             {
@@ -55,6 +55,9 @@ public class WheelColorLVL1Script : MonoBehaviour
 
         if (Lvl == 2)
         {
+            {
+
+            }
             if (transform.tag == "Red")
             {
                 Wheel.transform.localEulerAngles = new Vector3 (0, 0, 0);
@@ -95,6 +98,9 @@ public class WheelColorLVL1Script : MonoBehaviour
                 Wheel.transform.localEulerAngles = new Vector3 (0, 0, 72);
             }
         }
+        }
+
+        
    }
 
    void OnTriggerEnter(Collider other)
@@ -102,7 +108,9 @@ public class WheelColorLVL1Script : MonoBehaviour
      if(other.gameObject.transform.tag == "TriggerCamera")
      {
         Wheel.transform.parent = null;
-        Destroy(Wheel.gameObject);
+        Wheel.gameObject.SetActive(false);
+        Wheel = null;
+        
      }
    }
 }
