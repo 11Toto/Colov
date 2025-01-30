@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 9040113998314055959}
   - component: {fileID: 4354609205602440192}
   m_Layer: 0
-  m_Name: Trigger J
-  m_TagString: YellowObstacle
+  m_Name: Trigger R
+  m_TagString: RedObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,8 +178,8 @@ GameObject:
   - component: {fileID: 582569828782144106}
   - component: {fileID: 2897385551611650620}
   m_Layer: 0
-  m_Name: Trigger R
-  m_TagString: RedObstacle
+  m_Name: Trigger J
+  m_TagString: YellowObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4724207327671503485
 Transform:
   m_ObjectHideFlags: 0
