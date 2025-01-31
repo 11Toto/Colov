@@ -479,7 +479,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.8
+  m_fontSize: 61.95
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -563,7 +563,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1611,7 +1611,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.8
+  m_fontSize: 61.95
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1675,6 +1675,7 @@ GameObject:
   - component: {fileID: 1856019315}
   - component: {fileID: 1856019314}
   - component: {fileID: 1856019316}
+  - component: {fileID: 1856019317}
   m_Layer: 5
   m_Name: Text_Option
   m_TagString: Untagged
@@ -1748,7 +1749,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.55
+  m_fontSize: 72
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1814,6 +1815,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fr: "R\xC9GLAGES"
   en: SETTINGS
+--- !u!114 &1856019317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856019312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae13a903424d9429cff567f4f8b2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 2}
+  duration: 1
+  easing: 10
 --- !u!1 &1905604928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1929,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 35.3
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
