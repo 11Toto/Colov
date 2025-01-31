@@ -16,10 +16,22 @@ public class ChangeColorAnim : MonoBehaviour
     public void SelectNewColor(ChangeColor.CharacterColor oldColor, ChangeColor.CharacterColor newColor)
     {
         currentColor = newColor;
-        transform.DOLocalRotate(-Vector3.forward*turn, animDuration,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack).OnComplete(StopAnim);
+        //transform.DOLocalRotate(-Vector3.forward*turn, animDuration,RotateMode.LocalAxisAdd).SetEase(Ease.OutBack).OnComplete(StopAnim);
+        StartCoroutine(Animation());
     }
 
 
+    IEnumerator Animation()
+    {
+        transform.DOScaleX(-4, animDuration / 2).SetEase(Ease.InCubic);
+        transform.DOScaleY(-2, animDuration / 2).SetEase(Ease.InCubic);
+        transform.DOLocalMoveY(0.5f, animDuration / 2).SetEase(Ease.InCubic);
+        yield return new WaitForSeconds(animDuration / 2);
+        transform.DOScaleX(-3.02f, animDuration / 2).SetEase(Ease.InCubic);
+        transform.DOScaleY(-3.02f, animDuration / 2).SetEase(Ease.InCubic);
+        transform.DOLocalMoveY(1.264f, animDuration / 2).SetEase(Ease.InCubic);
+        StopAnim();
+    }
 
     void StopAnim()
     {
